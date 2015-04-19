@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFA-Shop system", "WFA-Shop system\WFA-Shop system.csproj", "{553443C1-CD15-4893-A2FD-55D9F2372CC1}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF - Shop system", "WPF - Shop system\WPF - Shop system.csproj", "{04331565-DA9E-4F25-A688-D0A5C98F8CBB}"
 EndProject
 Global

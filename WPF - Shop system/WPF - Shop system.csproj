@@ -84,6 +84,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>EmployeeClasses.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Data\ProductClasses.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductClasses.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Data\ProductData.cs" />
     <Compile Include="Logic\BulgarianLanguage.cs" />
     <Compile Include="Data\ShopDataDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -113,6 +119,9 @@
     <None Include="Data\EmployeeClasses.dbml.layout">
       <DependentUpon>EmployeeClasses.dbml</DependentUpon>
     </None>
+    <None Include="Data\ProductClasses.dbml.layout">
+      <DependentUpon>ProductClasses.dbml</DependentUpon>
+    </None>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -120,6 +129,11 @@
     <None Include="Data\EmployeeClasses.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>EmployeeClasses.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\ProductClasses.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>ProductClasses.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
     <None Include="Data\ShopDataDataSet.xsc">

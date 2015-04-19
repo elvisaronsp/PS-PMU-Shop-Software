@@ -18,5 +18,6 @@ namespace WPF___Shop_system.Data
                 newEmployee.Rank,
                 newEmployee.DateHired);
         }
+        //Just a test comment
     }
 }

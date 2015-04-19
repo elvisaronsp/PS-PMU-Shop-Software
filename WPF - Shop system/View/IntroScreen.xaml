@@ -47,15 +47,15 @@
                 <ColumnDefinition Width="2*" />
             </Grid.ColumnDefinitions>
             <Label HorizontalAlignment="Right" Grid.Column="0" Content="{ StaticResource IntroScreenEmployeePassword}"/>
-            <TextBox VerticalContentAlignment="Center" Grid.Column="1" Name="txtBoxEmployeePassword"></TextBox>
+            <PasswordBox VerticalContentAlignment="Center" Grid.Column="1" Name="txtBoxEmployeePassword"/>
         </Grid>
         <Grid Grid.Row="9" Grid.Column="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <Button MaxHeight="30px" MaxWidth="100px" Name="btnLogIn" Grid.Column="0" Content="Log In"></Button>
-            <Button MaxHeight="30px" MaxWidth="100px" Name="btnQuit" Grid.Column="1" Content="Exit"></Button>
+            <Button MaxHeight="30px" MaxWidth="100px" Name="btnLogIn" Grid.Column="0" Content="Log In" Click="btnLogIn_Click_1"></Button>
+            <Button MaxHeight="30px" MaxWidth="100px" Name="btnQuit" Grid.Column="1" Content="Exit" Click="btnQuit_Click_1"></Button>
         </Grid>
         <Grid Grid.Row="11" Grid.Column="1">
             <Grid.RowDefinitions>

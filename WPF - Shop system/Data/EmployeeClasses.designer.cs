@@ -72,6 +72,13 @@ namespace WPF___Shop_system.Data
 				return this.GetTable<Employee>();
 			}
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.AddNewEmployee")]
+		public int AddNewEmployee([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Name", DbType="NVarChar(30)")] string name, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="EmpID", DbType="NVarChar(10)")] string empID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="EmpPass", DbType="NVarChar(10)")] string empPass, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Rank", DbType="Int")] System.Nullable<int> rank, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="DateHired", DbType="NVarChar(10)")] string dateHired)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), name, empID, empPass, rank, dateHired);
+			return ((int)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Employees")]

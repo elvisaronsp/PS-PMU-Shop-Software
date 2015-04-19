@@ -10,7 +10,13 @@ namespace WPF___Shop_system
     {
         public string IntroScreenEmployeeID
         {
-            get { return "Потp. номер"; }
+            get { return "Потp. номер:"; }
+        }
+
+
+        public string IntroScreenEmployeePassword
+        {
+            get { return "Парола:"; }
         }
     }
 }

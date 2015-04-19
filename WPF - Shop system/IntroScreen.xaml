@@ -8,11 +8,11 @@
             <RowDefinition Height="10*" />
             <RowDefinition Height="*" MaxHeight="5px"/>
             <RowDefinition Height="25*" />
-            <RowDefinition Height="*" MaxHeight="5px"/>
-            <RowDefinition Height="10*" />
-            <RowDefinition Height="*" MaxHeight="5px"/>
-            <RowDefinition Height="10*" />
-            <RowDefinition Height="*" MaxHeight="5px"/>
+            <RowDefinition Height="*" MaxHeight="10px"/>
+            <RowDefinition Height="10*" MaxHeight="25px" />
+            <RowDefinition Height="*" MaxHeight="10px"/>
+            <RowDefinition Height="10*" MaxHeight="25px" />
+            <RowDefinition Height="*" MaxHeight="10px"/>
             <RowDefinition Height="10*" />
             <RowDefinition Height="*" MaxHeight="5px"/>
             <RowDefinition Height="10*" MaxHeight="40px"/>
@@ -23,31 +23,39 @@
             <ColumnDefinition Width="10*" />
             <ColumnDefinition Width="4*" />
         </Grid.ColumnDefinitions>
-        <Label HorizontalAlignment="Right" Name="lblLanguageBar" Grid.Column="2" Grid.Row="1" Content="Language position"/>
+        <Grid Grid.Row="1" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="10*" />
+            </Grid.ColumnDefinitions>
+            <Image HorizontalAlignment="Left" Width="30px" Grid.Column="2" Source="Resources/Images/bg.png"></Image>
+            <Image HorizontalAlignment="Right" Width="30px" Grid.Column="0" Source="Resources/Images/uk.png"></Image>
+        </Grid>
         <Label HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="28" FontWeight="Bold" Name="lblSystemName" Grid.Column="1" Grid.Row="3" Content="TU-Sofia Shop System"/>
         <Grid Grid.Row="5" Grid.Column="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="2*" />
             </Grid.ColumnDefinitions>
-            <Label HorizontalAlignment="Right" Grid.Column="0" Grid.Row="5" Content="{ StaticResource IntroScreenEmployeeID}"/>
-            <Label Grid.Column="1" Grid.Row="5" Content="blaaa"/>
+            <Label HorizontalAlignment="Right" Grid.Column="0" Content="{ StaticResource IntroScreenEmployeeID}"/>
+            <TextBox VerticalContentAlignment="Center" Grid.Column="1" Name="txtBoxEmployeeIDNumber"></TextBox>
         </Grid>
         <Grid Grid.Row="7" Grid.Column="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="2*" />
             </Grid.ColumnDefinitions>
-            <Label HorizontalAlignment="Right" Grid.Column="0" Grid.Row="7" Content="blaaa"/>
-            <Label Grid.Column="1" Grid.Row="7" Content="blaaa"/>
+            <Label HorizontalAlignment="Right" Grid.Column="0" Content="{ StaticResource IntroScreenEmployeePassword}"/>
+            <TextBox VerticalContentAlignment="Center" Grid.Column="1" Name="txtBoxEmployeePassword"></TextBox>
         </Grid>
         <Grid Grid.Row="9" Grid.Column="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <Label HorizontalAlignment="Center" Grid.Column="0" Content="blaaa"/>
-            <Label HorizontalAlignment="Center" Grid.Column="1" Content="blaaa"/>
+            <Button MaxHeight="30px" MaxWidth="100px" Name="btnLogIn" Grid.Column="0" Content="Log In"></Button>
+            <Button MaxHeight="30px" MaxWidth="100px" Name="btnQuit" Grid.Column="1" Content="Exit"></Button>
         </Grid>
         <Grid Grid.Row="11" Grid.Column="1">
             <Grid.RowDefinitions>

@@ -3,5 +3,6 @@
     public interface ILanguage
     {
         string IntroScreenEmployeeID { get; }
+        string IntroScreenEmployeePassword { get; }
     }
 }

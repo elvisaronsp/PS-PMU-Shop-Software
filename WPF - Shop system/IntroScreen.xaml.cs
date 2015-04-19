@@ -30,6 +30,7 @@ namespace WPF___Shop_system
         {
             ILanguage language = new BulgarianLanguage();
             Resources.Add("IntroScreenEmployeeID", language.IntroScreenEmployeeID);
+            Resources.Add("IntroScreenEmployeePassword", language.IntroScreenEmployeePassword);
         }
     }
 }
